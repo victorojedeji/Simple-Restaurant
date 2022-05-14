@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3, p, span {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+    z-index: 4;
+}
+
+.nav-flex-row li a {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 300;
+    transition: 1s;
+}
+
+.section-intro {
+position: relative;
+}
+
+.blur {
+    background-color: black;
+    height: 820px;
+    width: 100%;
+    opacity: .5;
+    position: absolute;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.bg-img {
+    height: 820px;
+    width: 100%;
+    background-size: cover;
+}
+
+.section-intro .name-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.section-intro .name {
+    text-align: center;
+    font-size: 10em;
+    font-weight: 700;
+    font-family: 'Sacramento', cursive;
+    color: white;
+    position: absolute;
+    bottom: 50%;
+    z-index: 2;
+}
+
+.link-to-book-wrapper {
+    bottom: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-to-book {
+    position: absolute;
+    bottom: 40%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: 'Quicksand', sans-serif;
+    transition: 1s;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8em;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    background-color: #95999e;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: none;
+    transition: 1s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .bg-img {
+        height: 500px;
+    }
+    
+    .nav-flex-row li a {
+        font-size: 1em;
+    }
+
+    .section-intro .name {
+        font-size: 7em;
+        font-weight: 600;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .nav-flex-row li a {
+        font-size: 1em;
+    }
+
+    .bg-img {
+        height: 500px;
+    }
+
+    .section-intro .name {
+        font-size: 5em;
+        font-weight: 400;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
